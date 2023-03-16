@@ -1,8 +1,8 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using frontend.Models;
+using frontend_asp.Models;
 
-namespace frontend.Controllers;
+namespace frontend_asp.Controllers;
 
 public class HomeController : Controller
 {

@@ -1,7 +1,14 @@
+using frontend_asp;
+using frontend_asp.Services;
+using frontend_asp.Services.Impl;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddHttpClient<IProductService,ProductService>();
+builder.Services.AddScoped<IProductService,ProductService>();
+SD.ProductAPIBase = builder.Configuration["ServiceUrls:ProductAPI"];
 
 var app = builder.Build();
 

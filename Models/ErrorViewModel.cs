@@ -1,4 +1,4 @@
-namespace frontend.Models;
+namespace frontend_asp.Models;
 
 public class ErrorViewModel
 {
